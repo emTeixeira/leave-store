@@ -23,7 +23,7 @@ A simple online store built with **HTML5, CSS3, and JavaScript** to showcase pro
 
 ### 📂 Project Structure
 
-![[Pasted image 20250720163602.png]]
+![[Pasted image image.png]]
 
 ---
 
