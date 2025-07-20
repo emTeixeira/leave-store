@@ -34,10 +34,10 @@ A simple online store built with **HTML5, CSS3, and JavaScript** to showcase pro
 2. Navigate to the folder:
     cd leave-store
 
-3.Open index.html in your browser.
+3. Open index.html in your browser.
 
-🤝 Contributing
+### 🤝 Contributing
 See CONTRIBUTING.md for details.
 
-📄 License
+### 📄 License
 This project is licensed under the MIT License. See LICENSE for details.
