@@ -24,10 +24,13 @@ A simple online store built with **HTML5, CSS3, and JavaScript** to showcase pro
 ### 📂 Project Structure
 / (root)
 │── /src
+
     │── index.html # Homepage with carousel
     │── produtos.html # Product listing page
     │── contatos.html # Contact page
+
 │── /assets
+
     │── styles.css # Global styles
     │── scripts.js # Carousel logic
     └── /img # Product images
