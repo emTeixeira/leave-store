@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Meta tags essenciais para a responsividade e suporte de caracteres especiais -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Carregamento antecipado das fontes para melhor desempenho -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Importação das fontes principais do projeto (Montserrat e Orbitron) -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Link para o CSS externo (centraliza o estilo da página) -->
+    <link rel="stylesheet" href="../assets/styles.css">
+
+    <!-- Título da página para facilitar identificação no navegador -->
+    <title>Leave Store</title>
+</head>
+
+<body class="index">
+
+    <!-- Cabeçalho com a logo e navegação -->
+    <header>
+        <!-- A logo da aplicação, simples e clara -->
+        <div class="logo">Leave Store</div>
+        <!-- Ícone de menu para dispositivos móveis, que ativa a função de alternar o menu -->
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <div class="menu-mobile" id="mobileMenu"></div>
+        <!-- Menu de navegação com links estruturados para uma boa experiência do usuário -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="contatos.html">Contato</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal da página -->
+    <main class="container">
+        <!-- Formas gráficas para design moderno (não afeta a funcionalidade) -->
+        <div class="tech-shapes">
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+
+        <!-- Lista de itens (carrossel de produtos) -->
+        <div class="list">
+            <!-- Produto 1 - Astro A50 -->
+            <div class="item active">
+                <div class="product-img">
+                    <img src="../assets/img/headset.png" alt="Astro A50">
+                </div>
+                <div class="content">
+                    <p class="product-tag">Fone de ouvido sem fio para jogos</p>
+                    <p class="product-name">Astro A50</p>
+                    <p class="description">
+                        Conecte e alterne entre três sistemas de jogos ao mesmo tempo com PLAYSYNC AUDIO, incluindo
+                        Xbox, PS5, PC, Nintendo Switch e muito mais...
+                    </p>
+                    <button class="btn">Saiba Mais</button>
+                </div>
+            </div>
+
+            <!-- Produto 2 - PRO X TKL -->
+            <div class="item">
+                <div class="product-img">
+                    <img src="../assets/img/keyboard.png" alt="PRO X TKL">
+                </div>
+                <div class="content">
+                    <p class="product-tag">Teclado para jogos sem fio - Switches mecânicos</p>
+                    <p class="product-name">PRO X TKL</p>
+                    <p class="description">
+                        Um teclado para jogos sem fio projetado para os mais altos níveis competitivos. Desenvolvido com
+                        profissionais, projetado para vencer...
+                    </p>
+                    <button class="btn">Saiba Mais</button>
+                </div>
+            </div>
+
+            <!-- Produto 3 - PRO 2 LIGHTSPEED -->
+            <div class="item">
+                <div class="product-img">
+                    <img src="../assets/img/mouse.png" alt="PRO 2 LIGHTSPEED">
+                </div>
+                <div class="content">
+                    <p class="product-tag">Mouse para jogos sem fio ambidestro LIGHTSPEED</p>
+                    <p class="product-name">PRO 2 LIGHTSPEED</p>
+                    <p class="description">
+                        Projetado com profissionais e concebido para vencer, o mouse sem fio Logitech G PRO 2
+                        LIGHTSPEED...
+                    </p>
+                    <button class="btn">Saiba Mais</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controles de navegação do carrossel (botões de setas) -->
+        <div class="arrows">
+            <!-- Botão de navegação para o item anterior -->
+            <button class="arrow-btn" id="prev">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
+                    class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5" />
+                </svg>
+            </button>
+
+            <!-- Botão de navegação para o próximo item -->
+            <button class="arrow-btn" id="next">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
+                    class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Indicadores de navegação (número da página e pontos) -->
+        <div class="indicators">
+            <!-- Exibição do número da página ativa -->
+            <div class="numbers">01</div>
+
+            <!-- Indicadores de página com pontos (dots) -->
+            <div class="dots">
+                <div class="dot active"></div> <!-- Ponto ativo -->
+                <div class="dot"></div> <!-- Ponto inativo -->
+                <div class="dot"></div> <!-- Ponto inativo -->
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Inclusão do arquivo JavaScript para funcionalidades do carrossel -->
+    <script src="../assets/scripts.js"></script>
+
+</body>
+
+</html>
