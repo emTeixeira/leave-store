@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../assets/css/styles.css">
+
+    <title>Leave Store</title>
+</head>
+
+<body class="index">
+
+    <header>
+        <div class="logo">Leave Store</div>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <div class="menu-mobile" id="mobileMenu"></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="contatos.html">Contato</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="tech-shapes">
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+
+        <div class="list">
+            <div class="item active">
+                <div class="product-img">
+                    <img src="../assets/img/headset.png" alt="Astro A50">
+                </div>
+                <div class="content">
+                    <p class="product-tag">Fone de ouvido sem fio para jogos</p>
+                    <p class="product-name">Astro A50</p>
+                    <p class="description">
+                        Conecte e alterne entre três sistemas de jogos ao mesmo tempo com PLAYSYNC AUDIO, incluindo
+                        Xbox, PS5, PC, Nintendo Switch e muito mais...
+                    </p>
+                    <button class="btn">Saiba Mais</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="product-img">
+                    <img src="../assets/img/keyboard.png" alt="PRO X TKL">
+                </div>
+                <div class="content">
+                    <p class="product-tag">Teclado para jogos sem fio - Switches mecânicos</p>
+                    <p class="product-name">PRO X TKL</p>
+                    <p class="description">
+                        Um teclado para jogos sem fio projetado para os mais altos níveis competitivos. Desenvolvido com
+                        profissionais, projetado para vencer...
+                    </p>
+                    <button class="btn">Saiba Mais</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="product-img">
+                    <img src="../assets/img/mouse.png" alt="PRO 2 LIGHTSPEED">
+                </div>
+                <div class="content">
+                    <p class="product-tag">Mouse para jogos sem fio ambidestro LIGHTSPEED</p>
+                    <p class="product-name">PRO 2 LIGHTSPEED</p>
+                    <p class="description">
+                        Projetado com profissionais e concebido para vencer, o mouse sem fio Logitech G PRO 2
+                        LIGHTSPEED...
+                    </p>
+                    <button class="btn">Saiba Mais</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="arrows">
+            <button class="arrow-btn" id="prev">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
+                    class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5" />
+                </svg>
+            </button>
+
+            <button class="arrow-btn" id="next">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
+                    class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                </svg>
+            </button>
+        </div>
+
+        <div class="indicators">
+            <div class="numbers">01</div>
+
+            <div class="dots">
+                <div class="dot active"></div> <!-- Ponto ativo -->
+                <div class="dot"></div> <!-- Ponto inativo -->
+                <div class="dot"></div> <!-- Ponto inativo -->
+            </div>
+        </div>
+
+    </main>
+
+    <script src="../assets/js/scripts.js"></script>
+
+</body>
+
+</html>
